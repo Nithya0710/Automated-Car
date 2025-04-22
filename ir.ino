@@ -27,7 +27,7 @@ void setup() {
 void loop() {
   if (irrecv.decode(&results)) {
     switch (results.value) {
-      case 1349551067:  // Button 1
+      case 16753245:  // Button 1
         Serial.println("1");
         digitalWrite(5, HIGH);
         digitalWrite(12, HIGH);
@@ -45,16 +45,6 @@ void loop() {
           servo.write(pos);
           delay(10);
         }
-        break;
-
-      case 16599223:  // Button 3
-        Serial.println("3");
-        digitalWrite(2, HIGH);
-        break;
-
-      case 16591063:  // Button 4
-        Serial.println("4");
-        digitalWrite(2, LOW);
         break;
 
       default:
